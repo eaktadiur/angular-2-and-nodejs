@@ -23,8 +23,40 @@ $ npm install -g bower
 $ npm install -g typescript
 ```
 
+## Quick Install
+Once you've downloaded the boilerplate and installed all the prerequisites, you're just a few steps away from starting to develop your MEAN application.
+
+The first thing you should do is install the Node.js dependencies. The boilerplate comes pre-bundled with a package.json file that contains the list of modules you need to start your application. To learn more about the modules installed visit the NPM & Package.json section.
+
+To install Node.js dependencies you're going to use npm again. In the application folder run this in the command-line:
+
+```bash
+$ npm install
+```
+
+This command does a few things:
+* First it will install the dependencies needed for the application to run.
+* If you're running in a development environment, it will then also install development dependencies needed for testing and running your application.
+* Finally, when the install process is over, npm will initiate a bower install command to install all the front-end modules needed for the application
+
+## Running Your Application
+After the install process is over, you'll be able to run your application using Grunt, just run grunt default task:
+
+```
+$ grunt
+```
+
+```
+$ npm start
+```
+
+Your application should run on port 3000 with the *development* environment configuration, so in your browser just go to [http://localhost:3000](http://localhost:3000)
+
+
+
+
 # Credits
-Inspired by the great work of [meanjs](https://github.com/meanjs/)
+Inspired by the great work of [meanjs](https://github.com/meanjs/) && [Maximilian](https://github.com/mschwarzmueller/)
 
 ## License
 (The MIT License)

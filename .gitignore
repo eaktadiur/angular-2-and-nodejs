@@ -8,3 +8,5 @@ Thumbs.db
 # Node and related ecosystem
 # ==========================
 node_modules/
+public/js/app/
+.idea/
