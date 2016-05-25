@@ -44,7 +44,7 @@
 
 	"disallowSpacesInsideArrayBrackets": true,
 
-	"disallowQuotedKeysInObjects": "allButReserved",
+	"disallowQuotedKeysInObjects": { "allExcept": ["reserved"] },
 
 	"disallowSpaceAfterObjectKeys": true,
 
@@ -157,6 +157,19 @@
 
 	"requireImportAlphabetized": false,
 
-	"disallowSpacesInsideTemplateStringPlaceholders": true
+    "requireSpaceBeforeObjectValues": true,
+    "requireSpaceBeforeDestructuredValues": true,
+
+	"disallowSpacesInsideTemplateStringPlaceholders": true,
+
+    "disallowArrayDestructuringReturn": false,
+
+    "requireNewlineBeforeSingleStatementsInIf": false,
+
+	"disallowUnusedVariables": true,
+
+	"requireSpacesInsideImportedObjectBraces": true,
+
+	"requireUseStrict": false
 }
 

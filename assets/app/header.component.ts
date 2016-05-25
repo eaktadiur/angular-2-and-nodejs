@@ -1,13 +1,13 @@
-import {Component} from "angular2/core";
-import {ROUTER_DIRECTIVES} from "angular2/router";
+import { Component } from "@angular/core";
+import { ROUTER_DIRECTIVES } from "@angular/router";
 @Component({
     selector: 'my-header',
     template: `
         <header class="row">
             <nav class="col-md-8 col-md-offset-2">
                 <ul class="nav nav-pills">
-                    <li><a [routerLink]="['Messages']">Messages</a></li>
-                    <li><a [routerLink]="['Auth']">Authentication</a></li>
+                    <li><a [routerLink]="['']">Messages</a></li>
+                    <li><a [routerLink]="['/auth']">Authentication</a></li>
                 </ul>
             </nav>
         </header>

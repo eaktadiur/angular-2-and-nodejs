@@ -1,7 +1,8 @@
-import {Component, OnInit} from "angular2/core";
-import {Message} from "./message";
-import {MessageService} from "./message.service";
-import {ErrorService} from "../errors/error.service";
+import { Component, OnInit } from "@angular/core";
+
+import { Message } from "./message";
+import { MessageService } from "./message.service";
+import { ErrorService } from "../errors/error.service";
 @Component({
     selector: 'my-message-input',
     template: `

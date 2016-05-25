@@ -1,18 +1,19 @@
-import {Component} from "angular2/core";
-import {SignupComponent} from "./signup.component";
-import {RouteConfig, ROUTER_DIRECTIVES} from "angular2/router";
-import {SigninComponent} from "./signin.component";
-import {LogoutComponent} from "./logout.component";
-import {AuthService} from "./auth.service";
+import { Component } from "@angular/core";
+import { Routes, ROUTER_DIRECTIVES } from "@angular/router";
+
+import { SignupComponent } from "./signup.component";
+import { SigninComponent } from "./signin.component";
+import { LogoutComponent } from "./logout.component";
+import { AuthService } from "./auth.service";
 @Component({
     selector: 'my-auth',
     template: `
         <header class="row spacing">
             <nav class="col-md-8 col-md-offset-2">
                 <ul class="nav nav-tabs">
-                    <li><a [routerLink]="['Signup']">Signup</a></li>
-                    <li><a [routerLink]="['Signin']" *ngIf="!isLoggedIn()">Signin</a></li>
-                    <li><a [routerLink]="['Logout']" *ngIf="isLoggedIn()">Logout</a></li>
+                    <li><a [routerLink]="['signup']">Signup</a></li>
+                    <li><a [routerLink]="['signin']" *ngIf="!isLoggedIn()">Signin</a></li>
+                    <li><a [routerLink]="['logout']" *ngIf="isLoggedIn()">Logout</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,10 +32,10 @@ import {AuthService} from "./auth.service";
         }
     `]
 })
-@RouteConfig([
-    {path: '/signup', name: 'Signup', component: SignupComponent, useAsDefault: true},
-    {path: '/signin', name: 'Signin', component: SigninComponent},
-    {path: '/logout', name: 'Logout', component: LogoutComponent},
+@Routes([
+    {path: '/signup', component: SignupComponent},
+    {path: '/signin', component: SigninComponent},
+    {path: '/logout', component: LogoutComponent}
 ])
 export class AuthenticationComponent {
     constructor (private _authService: AuthService) {}

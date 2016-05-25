@@ -1,8 +1,10 @@
-import {Message} from "./message";
-import {Http, Headers} from "angular2/http";
-import {Injectable, EventEmitter} from "angular2/core";
+import { Http, Headers } from "@angular/http";
+import { Injectable, EventEmitter } from "@angular/core";
 import 'rxjs/Rx';
-import {Observable} from "rxjs/Observable";
+import { Observable } from "rxjs/Observable";
+
+import { Message } from "./message";
+
 @Injectable()
 export class MessageService {
     messages: Message[] = [];

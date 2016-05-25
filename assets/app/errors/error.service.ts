@@ -1,5 +1,7 @@
-import {EventEmitter} from "angular2/core";
-import {Error} from "./error";
+import { EventEmitter } from "@angular/core";
+
+import { Error } from "./error";
+
 export class ErrorService {
     errorOccurred = new EventEmitter<Error>();
 

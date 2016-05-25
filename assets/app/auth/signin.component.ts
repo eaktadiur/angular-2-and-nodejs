@@ -1,9 +1,10 @@
-import {Component, OnInit} from "angular2/core";
-import {ControlGroup, FormBuilder, Validators, Control} from "angular2/common";
-import {User} from "./user";
-import {AuthService} from "./auth.service";
-import {Router} from "angular2/router";
-import {ErrorService} from "../errors/error.service";
+import { Component, OnInit } from "@angular/core";
+import { ControlGroup, FormBuilder, Validators, Control } from "@angular/common";
+import { Router } from "@angular/router";
+
+import { User } from "./user";
+import { AuthService } from "./auth.service";
+import { ErrorService } from "../errors/error.service";
 @Component({
     selector: 'my-signin',
     template: `

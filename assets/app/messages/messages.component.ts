@@ -1,6 +1,7 @@
-import {Component} from "angular2/core";
-import {MessageInputComponent} from "./message-input.component";
-import {MessageListComponent} from "./message-list.component";
+import { Component } from "@angular/core";
+
+import { MessageInputComponent } from "./message-input.component";
+import { MessageListComponent } from "./message-list.component";
 @Component({
     selector: 'my-messages',
     template: `
