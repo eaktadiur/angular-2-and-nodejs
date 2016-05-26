@@ -5,9 +5,9 @@ import { Message } from "./message";
 import { MessageService } from "./message.service";
 import { ErrorService } from "../errors/error.service";
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'my-message-list',
-  templateUrl: './views/list.html',
+  templateUrl: 'app/messages/views/list.html',
   directives: [MessageComponent]
 })
 export class MessageListComponent implements OnInit {
