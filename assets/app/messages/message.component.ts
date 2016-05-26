@@ -5,22 +5,7 @@ import { MessageService } from "./message.service";
 import { ErrorService } from "../errors/error.service";
 @Component({
     selector: 'my-message',
-    template: `
-        <article class="panel panel-default">
-            <div class="panel-body">
-                {{ message.content }}
-            </div>
-            <footer class="panel-footer">
-                <div class="author">
-                    {{ message.username }}
-                </div>
-                <div class="config" *ngIf="belongsToUser()">
-                    <a (click)="onEdit()">Edit</a>
-                    <a (click)="onDelete()">Delete</a>
-                </div>
-            </footer>
-        </article>
-    `,
+    templateUrl: 'app/messages/views/message.html',
     styles: [`
         .author {
             display: inline-block;

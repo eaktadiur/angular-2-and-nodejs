@@ -6,20 +6,20 @@ import { AuthenticationComponent } from "./auth/authentication.component";
 import { HeaderComponent } from "./header.component";
 import { ErrorComponent } from "./errors/error.component";
 @Component({
-    selector: 'my-app',
-    template: ` 
-        <div class="container">
-            <my-header></my-header>
-            <router-outlet></router-outlet>
-        </div>
-        <my-error></my-error>
-    `,
-    directives: [ROUTER_DIRECTIVES, HeaderComponent, ErrorComponent]
+  selector: 'my-app',
+  template: `
+    <div class="container">
+      <my-header></my-header>
+      <router-outlet></router-outlet>
+    </div>
+    <my-error></my-error>
+  `,
+  directives: [ROUTER_DIRECTIVES, HeaderComponent, ErrorComponent]
 })
 @Routes([
-    {path: '/', component: MessagesComponent},
-    {path: '/auth', component: AuthenticationComponent}
-])
+  {path: '/', component: MessagesComponent},
+  {path: '/auth', component: AuthenticationComponent}
+  ])
 export class AppComponent {
-    
+
 }
